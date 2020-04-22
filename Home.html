@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HomeFair</title>
+        
+         <!--CSS stylesheet-->
+        <link rel="stylesheet" type="text/css" href="Home.css">
+        
+        <!--Fontawesome stylesheet-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        
+    </head>
+    
+    <body>
+        
+        
+        <!--Wrapper for grid-->
+        <div class="wrapper">
+     
+            
+        
+            
+                
+            <!--Navbar start-->
+            <div class="navbar">
+           
+             <div class="logo-home"> <a href="Home.html"> <img src="Bilder/HomeFair_logo.png" alt="Logo"> </a>  </div>
+                
+        <ul>
+		      <div class="home"><div class="hvr-grow">  <li><a href="#"><i class="fas fa-home"></i>Hjem</a></li>  </div></div>
+             
+              <div class="aboutus"><div class="hvr-grow"><li><a href="#"><i class="fas fa-info-circle"></i>Om oss</a></li> </div></div>
+              
+              <div class="contactus"><div class="hvr-grow"><li><a href="#"><i class="fas fa-question-circle"></i>Kontakt oss</a></li> </div></div>
+              
+          
+        </ul> 
+             
+            <!--Navbar end-->
+            </div>
+           
+    
+        <div class="headline">
+        <h1>Skal du selge bolig? </h1> 
+        
+        <p>  Vi anvender kunstig intelligens til å finne meglerne som sikrer deg høyeste markedspris for din bolig.
+             Hvis du vil vite hva din eiendom er verdt og/eller finne de beste eiendomsmeglerne, kan du søke nedenfor.
+        </p> 
+        
+        <div class="searchwrap">
+                <div class="search">
+                   <input type="text" class="searchTerm" placeholder="Søk på adresse">
+                   <button id="myBtn"><div class="hvr-grow">Prøv nå!</div></button>
+                
+                </div>
+             </div>
+        </div>
+
+
+    
+
+        <h2 class="boligtjnst">Hvordan fungerer boligselgertjenesten? </h2>
+       
+
+
+        <div class="cards" id="card1">
+          <img src="bilder/søk_selg1.svg">
+        <h3>SØK</h3>
+        <p>Du søker på din adresse og vår modell lager et prisestimat på din bolig og vurderer hva hver enkel eiendomsmegler, 
+            som opererer i ditt område,vil kunne selge din bolig for. Vi bruker flere hundrede variabler samt salgshistorikken 
+            til eiendomsmeglerne om grunnlag for vår intelligente løsning. </p>
+        </div>
+
+        <div class="cards" id="card2">
+            <img src="bilder/hva_tjener_du.svg">
+        <h3>HVA TJENER DU?</h3>
+        <p>Du får et gratis prisestimat og du blir opplyst om forskjellen i forventet salgspris om du bruker en høytpresterende 
+            megler sammenlignet med en lavtpresterende megler; altså hvor mye du potensielt sett kan spare på riktig meglervalg 
+            for nettopp din bolig. </p>
+        </div>
+
+        <div class="cards" id="card3">
+            <img src="bilder/få_tilgang.svg">
+         <h3>FÅ TILGANG </h3>
+         <p>Deretter får du tilgang til listen over de 5 beste meglerne 
+                slik at du vet hvem som, statistisk sett, vil kunne selge din bolig til høyest pris. 
+                Du får også tilgang til annen viktig innsikt om ditt boligsalg og meglernes historikk </p>
+         </div>
+
+
+         <div class="nyhetsbrev">
+        <h2>Nyhetsbrev</h2>
+        <p>Meld deg på vårt nyhetsbrev og bli informert når vi lanserer nye tjenester eller lanserer våre tjenester i nye områder. </p>
+        <input type="text" class="epost" placeholder="E-post">
+        <button class="nyhetsbrevbtn"><div class="hvr-grow"><a href="#">Abboner</a></div></button>
+
+
+         </div>
+
+         
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+   
+    <h2>Primærrom (P rom) </h2>
+    <p id="modalpadding">Primærrom gir et bedre estimat enn bruksareal og er derfor ønskelig å anvende i prediksjonen. </p>
+    <input type="number" class="numbers" min="1" max="20" placeholder="Antall primærrom:">
+ 
+   
+    
+    <h2>Har du følgende?</h2>
+    <p id="modalpadding">Avhengig av datatilgjengelighet, vil informasjonen muligvis bli brukt til å gi deg et mer treffsikkert estimat.  </p>
+    
+    <div class="modalcards" id="garasje">
+    <img src="Bilder/Garasj.svg" alt="Garasje"> 
+    <p>Parkering/Garasje</p>
+    <input type="checkbox">
+    </div>
+
+    <div class="modalcards" id="balkong">
+            <img src="Bilder/Balkong.svg" alt="Balkong"> 
+            <p>Balkong/Terasse</p>
+            <input type="checkbox">
+            </div>
+
+    <h2>Har du oppusset følgende siden du kjøpte din bolig? </h2>
+    <p id="modalpadding"> Effekten av oppussing er vanligvis merkbar, men avhenger blant annet av boligtype og lokalitet. Velg nedenfor for et mer treffsikkert estimat. </p>
+    
+    <div class="modalcards" id="bad">
+            <img src="Bilder/Bad.svg" alt="Bad"> 
+            <p>Bad/Toalett</p>
+            <input type="checkbox">
+            </div>
+
+    <div class="modalcards" id="kjøkken">
+            <img src="Bilder/Kjøkken.svg" alt="Kjøkken"> 
+            <p>Kjøkken</p>
+            <input type="checkbox">
+             </div>
+
+    <button class="resultbtn"><div class="hvr-grow"><a href="Results.html">Få ditt prisestimat!</a></div></button>
+    
+
+</div>
+
+</div>
+        
+      
+    
+      
+         
+             <!--Footer start-->
+      
+             <div class="footer1">
+            
+        <div class="footer-logo"> <a href="Home.html"> <img src="Bilder/HomeFair_logo.png" alt="Logo"> </a> </div>
+         
+         <h2>
+             
+        <div class="twitter"><div class="hvr-grow"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a> </div> </div>
+            
+        <div class="facebook"><div class="hvr-grow"> <a href="#" target="_blank"><i class="fab fa-facebook"></i></a> </div> </div>
+        
+       
+        <div class="instagram"> <div class="hvr-grow"> <a href="#" target="_blank"><i class="fab fa-instagram"></i></a> </div> </div>
+            
+             
+        </h2>
+    
+            
+        </div>
+       <!--Footer end-->  
+                
+      
+      <!--Wrapper end-->
+        </div>
+       
+       
+       
+       <script>
+      
+  
+      //Modal
+var modal = document.getElementById("myModal");
+
+
+var btn = document.getElementById("myBtn");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+       
+       </script> 
+       
+    </body>
+</html>
